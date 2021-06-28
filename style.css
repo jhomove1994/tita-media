@@ -1,0 +1,186 @@
+body {
+    font-family: "Montserrat";
+    margin: 0;
+}
+
+.header-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+}
+
+.brand {
+    display: flex;
+}
+
+.brand .text {
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.brand .logo-name {
+    font-size: 19px;
+}
+
+.brand .eslogan {
+    font-size: 8px;
+}
+
+.header-main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    padding: 7px 20px;
+}
+
+.header-main ul li:hover,
+.active {
+    background: #fc758c;
+    color: #fff;
+}
+
+.landing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #fc758c;
+    color: #fff;
+    margin-bottom: 5rem;
+}
+
+.landing h1 {
+    font-size: 2.5rem;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+
+.landing p {
+    font-size: 1rem;
+    letter-spacing: 4px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.landing button {
+    all: unset;
+    background: #fff;
+    color: #fc758c;
+    margin-top: 3rem;
+    height: 50px;
+    padding: 0 25px;
+    font-size: 0.6rem;
+    font-weight: 700;
+}
+
+.nav-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-section .modo-vista {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-section nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    grid-auto-flow: dense;
+}
+
+.grid-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-items img {
+    padding-bottom: 5px;
+}
+
+.container-show-more {
+    display: flex;
+    justify-content: center;
+}
+
+button.show-more {
+    all: unset;
+    background: #fc758c;
+    color: #fff;
+    margin-top: 3rem;
+    height: 50px;
+    padding: 0 25px;
+    font-size: 0.6rem;
+    font-weight: 700;
+}
+
+footer {
+    margin-top: 4rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: 13px;
+    color: #cbd6dd;
+}
+
+footer p span.brand-footer {
+    color: #fc758c;
+}
+
+@media (min-width: 768px) {
+    .grid-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* Smartphones (portrait and landscape) – ------- – */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    #grid {
+        display: flex;
+        flex-direction: column;
+    }
+    .secondNav {
+        display: none;
+    }
+    .header-main {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .header-main div {
+        justify-content: center;
+    }
+    .header-main nav {
+        overflow-x: auto;
+    }
+    .landing h1 {
+        text-align: center;
+    }
+    .modo-vista {
+        display: none !important;
+    }
+}

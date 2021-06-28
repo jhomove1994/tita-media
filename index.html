@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>SNEAK</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="brand">
+            <div class="logo">
+                <img src="./Assets/Logo.png" alt="Logo SNEAK">
+            </div>
+            <div class="text">
+                <span class="logo-name">SNEAK</span>
+                <legend class="eslogan">CREATIVE PORTFOLIO</legend>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li class="active" onclick="getImages(event,'all')">
+                    ALL
+                </li>
+                <li class="branding" onclick="getImages(event,'branding')">
+                    Branding
+                </li>
+                <li class="web" onclick="getImages(event,'web')">
+                    Web
+                </li>
+                <li class="photography" onclick="getImages(event,'photography')">
+                    Photography
+                </li>
+                <li class="app" onclick="getImages(event,'app')">
+                    App
+                </li>
+                <li>
+                    <img src="./Assets/Search_Icon.png" alt="Search icon">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="landing">
+        <h1>EXPLORE BEYOND HORIZON</h1>
+        <p>Magna mundi referrentur quo, no rebum dignissim qui.<br/> Per quodsi accusata id, agam labores.</p>
+        <button>VIEW OUR WORK</button>
+    </section>
+    <main>
+        <nav class="nav-section">
+            <div class="modo-vista">
+                <img src="./Assets/Block_Icon.png" alt="block icon" style="margin-right: 5px">
+                <img src="./Assets/Column_Icon.png" alt="column icon">
+            </div>
+            <nav class="secondNav">
+                <ul>
+                    <li class="all active" onclick="getImages(event,'all')">
+                        ALL
+                    </li>
+                    <li class="branding" onclick="getImages(event,'branding')">
+                        Branding
+                    </li>
+                    <li class="web" onclick="getImages(event,'web')">
+                        Web
+                    </li>
+                    <li class="photography" onclick="getImages(event,'photography')">
+                        Photography
+                    </li>
+                    <li class="app" onclick="getImages(event,'app')">
+                        App
+                    </li>
+                    <li>
+                        <img src="./Assets/Search_Icon.png" alt="Search icon">
+                    </li>
+                </ul>
+            </nav>
+        </nav>
+        <div class="grid-container">
+            <div id="grid">
+                <div id="grid-items-1" class="grid-items"></div>
+                <div id="grid-items-2" class="grid-items"></div>
+                <div id="grid-items-0" class="grid-items"></div>
+            </div>
+        </div>
+        <div class="container-show-more">
+            <button class="show-more" onclick="showMore()">
+                Show Me More
+            </button>
+        </div>
+    </main>
+    <footer>
+        <p> © 2016 - <span class="brand-footer">Sneak</span> All Right Reserved</p>
+        <p>
+            <a href="#"><img src="./Assets/socialIcons/Facebook.png" alt="facebook icon"></a>
+            <a href="#"><img src="./Assets/socialIcons/Tweeter.png" alt="tweeter icon"></a>
+            <a href="#"><img src="./Assets/socialIcons/Dribble.png" alt="drible icon"></a>
+            <a href="#"><img src="./Assets/socialIcons/Google.png" alt="google icon"></a>
+            <a href="#"><img src="./Assets/socialIcons/Youtube.png" alt="youtube icon"></a>
+        </p>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
